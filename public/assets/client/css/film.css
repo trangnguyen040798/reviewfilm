@@ -1,0 +1,216 @@
+@charset "UTF-8";
+
+.img-responsive {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.film-name {
+  text-transform: uppercase;
+  margin-bottom: 17px;
+}
+
+.film-name h2 {
+  color: #FF8D1B;
+  margin-bottom: 5px;
+}
+
+.div-item .film-item {
+  display: flex;
+  margin-bottom: 17px;
+}
+
+.div-item .film-item label {
+  margin-right: 5px;
+}
+
+.list_video .item .img-responsive {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.list_video .item .w3l-movie-gride-agile {
+  margin: 0 !important;
+  width: 92% !important;
+  text-align: left;
+}
+
+.list_video .item .w3l-movie-gride-agile .hvr-shutter-out-horizontal {
+  width: 100%;
+}
+
+.w3_latest_text,
+h4.latest-text {
+  margin-left: 0;
+  font-size: 20px;
+}
+
+.film-summary {
+  margin-bottom: 30px;
+}
+
+.single-right-grid-left a img {
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.rate-area,
+.s-rate-area {
+  float: left;
+  border-style: none;
+}
+
+.rate-area:not(:checked) > input,
+.s-rate-area:not(:checked) input,
+.d-rate-area:not(:checked) input {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+.rate-area:not(:checked) > label,
+.s-rate-area:not(:checked) label,
+.d-rate-area:not(:checked) label {
+  float: right;
+  width: 0.8em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 180%;
+  margin-right: 0;
+  color: lightgrey;
+}
+
+.d-rate-area:not(:checked) label {
+  width: 1em;
+  font-size: 140%;
+}
+
+.rate-area:not(:checked) > label:before,
+.s-rate-area:not(:checked) label:before {
+  content: "\2605";
+}
+
+.rate-area > input:checked ~ label,
+.s-rate-area input:checked ~ label,
+.d-rate-area input:checked ~ label {
+  color: #FF8D1B;
+}
+
+.fa-star-o {
+  color: #FF8D1B !important;
+}
+
+.rate-area:not(:checked) > label:hover,
+.rate-area:not(:checked) > label:hover ~ label {
+  color: #FF8D1B;
+}
+
+.rate-area > input:checked + label:hover,
+.rate-area > input:checked + label:hover ~ label,
+.rate-area > input:checked ~ label:hover,
+.rate-area > input:checked ~ label:hover ~ label,
+.rate-area > label:hover ~ input:checked ~ label {
+  color: #FF8D1B;
+}
+
+.panel {
+  background: black;
+  margin-top: 20px;
+}
+
+.panel-footer {
+  background: black;
+  border: 1px solid #999999;
+  margin-top: 30px;
+}
+
+.panel-footer textarea {
+  border: none;
+  height: 100px;
+  border-bottom: 1px solid white;
+  background: black;
+  margin-bottom: 10px;
+  color: #999999;
+  font-size: 14px;
+  box-shadow: none;
+}
+
+.panel-footer textarea:focus {
+  box-shadow: none;
+}
+
+.panel-footer #btn-chat {
+  float: right;
+}
+
+.panel-body {
+  padding: 0;
+  margin-top: 30px;
+}
+
+.chat li {
+  list-style: none;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.chat li .header {
+  border: none;
+  padding: 0;
+}
+
+.chat li .header .text-muted {
+  margin-left: 10px;
+}
+
+.chat li .chat-img {
+  width: 10%;
+}
+
+.chat li .chat-img img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.error_body {
+  display: none;
+}
+
+.text-danger {
+  color: red;
+}
+
+.song {
+  margin-bottom: 30px;
+}
+
+.fa-pencil {
+  margin-left: 5px;
+  color: #cccccc;
+  cursor: pointer;
+}
+
+.edit-txt {
+  color: #777;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.edit-txt i {
+  font-size: 5px;
+  margin: 0 5px;
+}
+
+.first-div {
+  display: flex;
+  align-items: center;
+}
+

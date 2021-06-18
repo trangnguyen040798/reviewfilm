@@ -1,0 +1,187 @@
+ul.dropdown-menu.multi-column {
+  width: 500px;
+  background: #252525;
+}
+
+ul.dropdown-menu.multi-column a {
+  color: white !important;
+}
+
+ul.dropdown-menu.multi-column-2 {
+  width: 350px;
+  background: #252525;
+}
+
+ul.dropdown-menu.multi-column-2 a {
+  color: white;
+}
+
+.invalid-feedback {
+  display: none;
+  color: red;
+  font-size: 13px;
+}
+
+form > div {
+  margin-bottom: 20px;
+}
+
+.form input {
+  margin-bottom: 0 !important;
+}
+
+body {
+  background: black !important;
+  color: white;
+}
+
+.w3_search input[type=submit] {
+  box-shadow: 0 0 10px;
+}
+
+.w3layouts_logo a h1 {
+  color: white;
+}
+
+.w3l-movie-text h6 a {
+  color: #909090;
+}
+
+.breadcrumb {
+  background: #252525 !important;
+}
+
+ol.breadcrumb li a {
+  color: white !important;
+}
+
+h4.latest-text {
+  color: white;
+  font-size: 1.5em;
+}
+
+.single-right {
+  background: #252525;
+}
+
+.single-right h3 {
+  color: white;
+}
+
+.filter {
+  color: #909090;
+}
+
+.w3l-movie-text h6 {
+  height: 36px;
+}
+
+.mid-2 {
+  padding-bottom: 5px;
+}
+
+.mid-2 p {
+  color: #909090;
+}
+
+.w3l-movie-gride-agile1 {
+  width: 95% !important;
+  border-bottom: 1px solid #424242;
+}
+
+.w3l_sign_in_register ul li {
+  color: white;
+}
+
+.list-btn .btn {
+  color: black;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.btn-secondary {
+  background: #252525;
+  color: white !important;
+}
+
+.action-btn button {
+  background: #252525;
+}
+
+hr {
+  border-top: 1px solid #252525;
+}
+
+.glyphicon-time {
+  margin: 0 5px;
+}
+
+.hvr-shutter-out-horizontal {
+  display: block;
+}
+
+.form-module .cta {
+  display: flex;
+  flex-wrap: center;
+  jusstify-content: space-between;
+  background: white;
+}
+
+.form-module .cta .social-button {
+  width: 50%;
+}
+
+.form-module .cta .loginBtn--facebook {
+  color: blue;
+}
+
+.form-module .cta .loginBtn--google {
+  color: red;
+}
+
+.d-rate-area:not(:checked) input {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+.d-rate-area:not(:checked) label {
+  float: right;
+  width: 0.8em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 180%;
+  margin-right: 0;
+  color: lightgrey;
+}
+
+.d-rate-area:not(:checked) label {
+  width: 14px;
+  font-size: 15px;
+  margin-right: 2px;
+}
+
+.d-rate-area input:checked ~ label {
+  color: #FF8D1B;
+}
+
+.fa-star-o {
+  color: #FF8D1B !important;
+}
+
+.form-module input[type=text],
+.form-module input[type=password],
+.form-module input[type=email] {
+  color: black;
+}
+
+form[name=form_login] {
+  margin-bottom: 15px;
+}
+
+ul li {
+  list-style: none;
+}
+

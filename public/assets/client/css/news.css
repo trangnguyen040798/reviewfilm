@@ -1,0 +1,127 @@
+.wthree-news-right-top {
+  min-height: 450px;
+}
+
+.wthree-news-left-img img {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wthree-news-img img {
+  height: 145px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tab-pane nav {
+  text-align: right;
+}
+
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover {
+  background-color: #ff9800;
+  border-color: #ff9800;
+}
+
+.pagination > li > span,
+.pagination > li > a {
+  color: #ff9800;
+}
+
+ol.breadcrumb li a {
+  color: white !important;
+}
+
+.wthree-news-info h5 a {
+  color: #999999;
+}
+
+.date-text a,
+.top-news-grid-heading a {
+  color: #999999;
+}
+
+.wthree-news-left-img h4 {
+  color: #ececec !important;
+}
+
+.panel {
+  background: black;
+  margin-top: 20px;
+}
+
+.panel-footer {
+  background: black;
+  border: none;
+}
+
+.panel-footer textarea {
+  border: none;
+  border-bottom: 1px solid white;
+  background: black;
+  margin-bottom: 10px;
+  color: #999999;
+  font-size: 14px;
+  box-shadow: none;
+}
+
+.panel-footer #btn-chat {
+  float: right;
+}
+
+.panel-body {
+  padding: 0;
+}
+
+.chat li {
+  list-style: none;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.chat li .header {
+  border: none;
+  padding: 0;
+}
+
+.chat li .header .text-muted {
+  margin-left: 10px;
+}
+
+.chat li .chat-img {
+  width: 10%;
+}
+
+.chat li .chat-img img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.error_body {
+  display: none;
+}
+
+.text-danger {
+  color: red;
+}
+
+.btnShare {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.submenu {
+  display: none;
+  background: #444359;
+  font-size: 14px;
+}
+
+textarea:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+

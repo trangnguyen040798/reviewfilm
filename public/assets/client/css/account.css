@@ -1,0 +1,222 @@
+.card-header {
+  position: relative;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  padding-bottom: 100px;
+}
+
+.card-header .btn {
+  color: black;
+  bottom: 4%;
+  position: absolute;
+  right: 4%;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.hello {
+  height: 250px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+
+.hello img {
+  border-radius: 50%;
+  border: 3px solid white;
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hello i {
+  position: absolute;
+  font-size: 20px;
+  padding: 10px;
+  background: #d8d8d8;
+  right: 38%;
+  color: black;
+  cursor: pointer;
+  border-radius: 50%;
+  bottom: 4%;
+  box-shadow: 0 0 10px;
+}
+
+.heading-box {
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+}
+
+button:focus {
+  outline: none;
+}
+
+.action-btn button {
+  width: 100%;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.action-btn a {
+  color: black !important;
+}
+
+.list-btn {
+  margin: 20px 0;
+}
+
+.list-btn .btn {
+  color: black;
+  background: #252525;
+}
+
+.w3l-movie-gride-agile {
+  width: 28%;
+  text-align: left;
+  margin-right: 3%;
+  padding: 0 5px !important;
+}
+
+.w3l-movie-gride-agile .ribben.two {
+  left: 5%;
+  text-align: center;
+}
+
+.w3l-movie-gride-agile .hvr-shutter-out-horizontal img {
+  height: 180px;
+}
+
+.w3l-movie-text .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.w3l-movie-text .btn {
+  color: black;
+}
+
+.list-film {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kv-file-content {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.box-saved-video {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-saved-video .image-sv {
+  width: 140px;
+  height: 100px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.box-saved-video .image-sv img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100px;
+}
+
+.box-saved-video .content-cate a {
+  color: white !important;
+}
+
+.box-saved-video .content-cate .cate_name {
+  font-size: 22px;
+}
+
+.box-saved-video .content-cate .list a {
+  font-size: 13px;
+}
+
+.box-saved-video .content-cate .list .see-more {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.box-saved-video .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #252525;
+  overflow: hidden;
+  width: 0;
+  height: 100px;
+  transition: 0.5s ease;
+}
+
+.box-saved-video .image-sv:hover .overlay {
+  width: 50%;
+  left: 50%;
+}
+
+.box-saved-video .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.list-sv-title {
+  margin: 20px 0px;
+  text-transform: uppercase;
+}
+
+.list-sv-title .fa-bars {
+  margin-right: 5px;
+}
+
+.dashed {
+  height: 272px;
+  border-style: dashed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: #FF8D1B;
+}
+
+.dashed .child-dashed {
+  border-style: dashed;
+  width: 70%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: #FF8D1B;
+}
+
+.dashed .child-dashed .create {
+  color: #FF8D1B;
+}
+
+.w3l-movie-text h6 a {
+  font-size: 16px;
+}
+
+.mid-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mid-2 button {
+  background: #252525;
+  color: #FF8D1B;
+}
+

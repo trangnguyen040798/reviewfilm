@@ -1,0 +1,40 @@
+#addFilm {
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#film_table_1 img {
+  width: 125px !important;
+  height: 75px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.select2 {
+  width: 100% !important;
+}
+
+.more-info {
+  display: none;
+}
+
+.category,
+.actor {
+  display: flex;
+}
+
+.category .tag,
+.actor .tag {
+  border-radius: 4px;
+  background: #a913a9;
+  margin-right: 10px;
+}
+
+.category .tag span,
+.actor .tag span {
+  padding: 7px;
+  font-weight: bold;
+  color: white;
+}
+

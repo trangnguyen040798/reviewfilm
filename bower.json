@@ -1,0 +1,20 @@
+{
+  "name": "reviewfilm",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Nguyễn Thị Thu Trang <trangntt040798@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/trangnguyen040798/reviewfilm.git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bower": "https://github.com/trangnguyen040798/bower-reviewfilm.git"
+  }
+}

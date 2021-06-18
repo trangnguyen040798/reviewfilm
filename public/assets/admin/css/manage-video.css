@@ -1,0 +1,157 @@
+#addManageVideo {
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#manage-video_table_1 img {
+  width: 200px !important;
+  height: 125px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#manage-video_table_1 video {
+  max-width: 225px;
+}
+
+.fileinput-remove {
+  float: right;
+}
+
+textarea {
+  width: 100%;
+  height: 400px;
+  padding: 10px;
+  font-size: 16px;
+  color: #14213d;
+  border: 2px solid #8d99ae;
+  border-radius: 20px;
+  margin: 20px auto;
+  outline: none;
+}
+
+.tour-tabs {
+  margin-top: 20px;
+}
+
+.tour-tabs ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tour-tabs ul li label {
+  font-family: "Calibre", "Helvetica", sans-serif;
+  font-weight: bold;
+  line-height: 32px;
+  letter-spacing: 1px;
+  float: left;
+  padding: 7px 15px 2px;
+  width: 23%;
+  text-align: center;
+  color: white;
+  margin-right: 10px;
+  border-bottom: 2px solid #999999;
+}
+
+.tour-tabs ul li label:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #FF8D1B;
+}
+
+.tour-tabs .content_tab {
+  font-family: "Helvetica";
+  clear: both;
+}
+
+.tour-tabs .content_tab > div {
+  width: 100%;
+  background: #fff;
+  line-height: 1.5em;
+  letter-spacing: 0.3px;
+  padding-top: 20px;
+}
+
+.tour-tabs img,
+.tour-tab p {
+  max-width: 100% !important;
+}
+
+.tour-tabs .content_tab p {
+  color: black !important;
+}
+
+.tour-tabs > input,
+.tour-tabs .content_tab > div {
+  display: none;
+}
+
+.tour-tabs .content_tab .active {
+  display: block;
+}
+
+.tour-tabs .title_tab .active label {
+  border-bottom: 2px solid #FF8D1B;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin-right: 15px;
+  width: 200px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background: #ff891e;
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #ff891e;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+.filter {
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filter > div {
+  width: 48% !important;
+}
+
+#createAudio > button {
+  float: right;
+}
+
+input:focus,
+video:focus {
+  outline: none;
+}
+
+.sound-bg audio {
+  margin-top: 20px;
+}
+
+.m-subheader a {
+  color: #5d5d5d;
+  text-decoration: underline;
+  padding: 10px;
+}
+
+.final-video,
+.combine-video {
+  display: flex;
+  justify-content: center;
+}
+

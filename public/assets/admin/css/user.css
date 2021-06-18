@@ -1,0 +1,13 @@
+#addUser {
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#user_table_1 img {
+  width: 125px !important;
+  height: 75px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+

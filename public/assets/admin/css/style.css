@@ -1,0 +1,71 @@
+.show {
+  display: block !important;
+}
+
+.m-subheader {
+  padding: 20px 30px;
+}
+
+.m-body .m-content {
+  margin: 0 10px;
+  padding: 20px !important;
+}
+
+.error {
+  color: red;
+}
+
+.multi-delete {
+  display: none;
+  float: right;
+  margin-right: 2%;
+}
+
+#ShowItem .avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 auto;
+}
+
+#ShowItem .show-content {
+  border-top: 2px solid #a913a9;
+  padding-top: 20px;
+  width: 95%;
+  margin: 20px auto;
+}
+
+#ShowItem .show-content .title {
+  color: #a913a9;
+}
+
+#ShowItem .show-header {
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#ShowItem .show-header .show-follower {
+  position: absolute;
+  left: 20%;
+  top: 60%;
+}
+
+#ShowItem .show-header .show-following {
+  position: absolute;
+  right: 20%;
+  top: 60%;
+}
+
+#ShowItem .show-header .show-icon {
+  position: absolute;
+  left: 57%;
+  top: 80%;
+}
+
+#ShowItem .show-header .show-icon i {
+  color: blue;
+}
+

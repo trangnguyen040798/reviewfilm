@@ -1,0 +1,458 @@
+.contact-list {
+  padding: 0;
+}
+
+.contact-list li {
+  list-style-type: none;
+}
+
+.contact-list li a {
+  text-decoration: none;
+}
+
+.contact-list__item__wrapper {
+  background-color: #fff;
+  height: 100%;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.contact-list__item__wrapper .contact__icon {
+  min-height: 40px;
+  min-width: 40px;
+  margin-right: 1rem;
+  border: 1px solid #FF8D1B;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.contact-list__item__wrapper .contact__icon i {
+  color: #FF8D1B;
+  transition: 0.4s;
+}
+
+.contact-list__item__wrapper:hover .contact__icon {
+  background-color: #FF8D1B;
+}
+
+.contact-list__item__wrapper:hover .contact__icon i {
+  color: #fff;
+}
+
+.contact-list__item__wrapper:hover .contact__value {
+  color: #FF8D1B;
+}
+
+.contact__inner {
+  padding-bottom: 5px;
+}
+
+.contact__inner .contact__label {
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgba(30, 38, 56, 0.65);
+  margin-bottom: 0;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.contact__inner .contact__value {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #1e2638;
+  transition: 0.4s;
+}
+
+.map-header__title {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 400;
+  padding-top: 2rem;
+}
+
+.map-header__title::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #FF8D1B;
+  display: block;
+  margin: 15px auto;
+}
+
+.map-header__title strong {
+  font-weight: 700;
+}
+
+.map-header__store-section {
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 3rem;
+}
+
+.map-header__store-section .form-select {
+  padding: 1rem 4rem;
+  border: 1px solid #FF8D1B;
+  border-radius: 4px;
+}
+
+.map-header__store-section .form-select option {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.map-header__store-section .form-select:checked {
+  border: none;
+}
+
+.stores-map__main {
+  background: #f7f7f7;
+  position: relative;
+}
+
+.stores-map__main .stores {
+  position: relative;
+}
+
+.stores-map__main .map-wrapper {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+  position: relative;
+}
+
+.stores-map__main .map-wrapper::after {
+  content: "";
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  display: block;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, white 93%);
+  bottom: 0;
+}
+
+.stores-map__main .map-wrapper::before {
+  content: "";
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  display: block;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.1) 0%, white 93%);
+  top: 0;
+}
+
+.map-point {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 100px;
+  display: block;
+}
+
+.map-point .map-point__marker {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #FF8D1B;
+  border-radius: 50%;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+}
+
+.map-point .map-point__marker-radar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  border: 2px solid rgba(255, 141, 27, 0.2);
+  background-color: rgba(255, 141, 27, 0.1);
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+  opacity: 0;
+  -webkit-animation: marker-animation 3.5s ease-out infinite;
+          animation: marker-animation 3.5s ease-out infinite;
+}
+
+@-webkit-keyframes marker-animation {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@keyframes marker-animation {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.map-point .map-point__tooltip {
+  position: absolute;
+  right: -7.5px;
+  z-index: 3;
+  width: 150px;
+  background-color: #fff;
+  box-shadow: 0 0 30px rgba(30, 38, 56, 0.15);
+  text-align: center;
+  border-radius: 4px;
+  padding: 3% 0;
+  transform: translate(50%);
+  margin-top: 12px;
+  transition: 0.5s;
+  display: none;
+  transition-delay: 0.5s;
+}
+
+.map-point .map-point__tooltip:hover {
+  display: block;
+}
+
+.map-point .map-point__tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  right: 50%;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 5px solid #fff;
+}
+
+.map-point .map-point__tooltip::after:hover {
+  display: block;
+}
+
+.map-point .map-point__tooltip a {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(30, 38, 56, 0.65);
+}
+
+.map-point:hover .map-point__tooltip {
+  display: block;
+  transition-delay: 0.1s;
+}
+
+.map-point-bratislava {
+  top: 28%;
+  width: 344px;
+}
+
+.map-point-zilina {
+  top: 34%;
+  width: 229px;
+}
+
+.map-point-kosice {
+  top: 64%;
+  width: 362px;
+}
+
+.content-wrapper {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.content-wrapper .content-store {
+  min-height: 290px;
+  margin: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 30px rgba(30, 38, 56, 0.15);
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.content-wrapper .content-store .content-store__inner {
+  padding: 1.5rem;
+}
+
+.content-store__title {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: black;
+}
+
+.content-store__title strong {
+  font-weight: 700;
+}
+
+.content-store__contact {
+  margin: 2rem 0 2.5rem 0;
+}
+
+.content-store__more-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-store__more-info .opening-hours {
+  margin-right: 1.5rem;
+}
+
+.content-store__more-info .opening-hours .opening-hours__title {
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.content-store__more-info .opening-hours .opening-hours__days {
+  padding: 0;
+  list-style-type: none;
+}
+
+.content-store__more-info .opening-hours .opening-hours__days li {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 20px;
+}
+
+.content-store__more-info .opening-hours .opening-hours__days li p {
+  font-weight: 400;
+  color: rgba(30, 38, 56, 0.65);
+  padding-right: 1rem;
+  font-size: 0.8rem;
+}
+
+.content-store__more-info .opening-hours .opening-hours__days li strong {
+  color: #1e2638;
+  text-align: right;
+  font-size: 0.8rem;
+}
+
+.content-store__more-info .shop-picture {
+  width: 40%;
+  height: 130px;
+  overflow: hidden;
+}
+
+.content-store__more-info .shop-picture img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(100%);
+}
+
+@media only screen and (max-width: 430px) {
+  .content-wrapper .content-store {
+    margin: 0;
+  }
+
+  .content-store__more-info {
+    display: table;
+  }
+
+  .content-store__more-info .shop-picture {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  #store_bratislava .map-wrapper .map {
+    padding-right: 200px;
+  }
+
+  .map-wrapper .map-point-bratislava {
+    width: 244px;
+  }
+
+  #store_kosice .map-wrapper .map {
+    padding-right: 200px;
+  }
+
+  .map-wrapper .map-point-kosice {
+    width: 263px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .content-wrapper .content-store {
+    margin-top: 60%;
+  }
+
+  #store_bratislava .map-wrapper .map {
+    padding-right: 600px;
+    padding-bottom: 100px;
+  }
+
+  .map-wrapper .map-point-bratislava {
+    width: 44px;
+    top: 22%;
+  }
+
+  #store_zilina .map-wrapper .map {
+    padding-right: 370px;
+    padding-bottom: 188px;
+  }
+
+  .map-wrapper .map-point-zilina {
+    width: 44px;
+    top: 22%;
+  }
+
+  #store_kosice .map-wrapper .map {
+    padding-right: 636px;
+    padding-bottom: 660px;
+  }
+
+  .map-wrapper .map-point-kosice {
+    width: 44px;
+    top: 22%;
+  }
+
+  .stores-map__main .map-wrapper::before {
+    height: 10%;
+  }
+}
+
+#store_kosice,
+#store_zilina {
+  display: none;
+}
+

@@ -1,0 +1,117 @@
+#form_add input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#form_add input[type=text] {
+  color: white !important;
+  border: none !important;
+  border-bottom: 1px solid #999999 !important;
+  background: black !important;
+}
+
+#form_add .input-group {
+  width: 100%;
+}
+
+#form_add select {
+  background: black !important;
+  border: none !important;
+  color: white !important;
+  border-bottom: 1px solid #999999 !important;
+}
+
+#form_add .file-caption {
+  background: black;
+}
+
+#form_add .btn-file {
+  background: #FF8D1B;
+}
+
+#form_add textarea {
+  background: black;
+  width: 100%;
+}
+
+#form_add .col-form-label {
+  text-align: right;
+  color: #FF8D1B;
+}
+
+#form_add .float-right {
+  float: right;
+}
+
+.action-btn button {
+  width: 100%;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.action-btn a {
+  color: black !important;
+}
+
+.more-info {
+  display: none;
+}
+
+.select2-container--default .select2-selection--multiple {
+  background: black !important;
+  border: none !important;
+  border-bottom: 1px solid #999999 !important;
+}
+
+.select2-results__options {
+  background: black !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background: black !important;
+  color: #FF8D1B !important;
+  border: 1px solid #FF8D1B !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  color: #FF8D1B !important;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+  background: #252525 !important;
+}
+
+.krajee-default.file-preview-frame {
+  border: 1px solid !important;
+}
+
+.krajee-default.file-preview-frame img {
+  width: 100% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.datepicker {
+  background: black !important;
+  width: 300px;
+}
+
+.datepicker table {
+  width: 100%;
+}
+
+.datepicker-months td,
+.datepicker-years td,
+.datepicker-decades td,
+.datepicker-centuries td {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.datepicker-months td span,
+.datepicker-years td span,
+.datepicker-decades td span,
+.datepicker-centuries td span {
+  width: 20%;
+}
+

@@ -1,0 +1,23 @@
+#addArtist {
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#artist_table_1 img {
+  width: 125px !important;
+  height: 75px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#ShowItem .story {
+  padding: 10px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+#ShowItem .show-story {
+  height: 100%;
+}
+

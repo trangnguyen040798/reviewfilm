@@ -1,0 +1,64 @@
+.col-md-3 img {
+  height: 150px;
+  width: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.info h3 {
+  margin: 20px 0;
+}
+
+.info p {
+  display: flex;
+  align-items: center;
+}
+
+.info p i {
+  font-size: 5px;
+  margin: 0 5px;
+}
+
+.list-saved-video ul {
+  padding-left: 30px;
+}
+
+.list-saved-video ul a {
+  color: white;
+}
+
+.list-saved-video ul li {
+  display: flex;
+  align-items: center;
+  background: #252525;
+  padding: 10px;
+}
+
+.list-saved-video ul li img {
+  width: 180px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 20px;
+}
+
+.box-overlay {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  height: 50px;
+  top: 200%;
+  width: 100%;
+  background: #252525;
+  justify-content: center;
+  display: flex;
+  color: white;
+  align-items: center;
+}
+
+.overlay i {
+  margin-right: 10px;
+}
+
