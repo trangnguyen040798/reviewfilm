@@ -1,0 +1,68 @@
+.show {
+	display : block !important;
+}
+.m-subheader{
+    padding : 20px 30px;
+}
+.m-body {
+    .m-content {
+        margin : 0 10px;
+        padding : 20px !important;
+    }
+}
+
+.error {
+    color : red;
+}
+
+.multi-delete {
+    display : none;
+    float: right;
+    margin-right: 2%;
+}
+
+#ShowItem {
+    .avatar {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    .show-content {
+        border-top: 2px solid #a913a9;
+        padding-top : 20px;
+        width: 95%;
+        margin: 20px auto;
+        .title {
+            color : #a913a9;
+        }
+    }
+
+    .show-header {
+        position : relative;
+        font-size : 14px;
+        font-weight : bold;
+        .show-follower {
+            position: absolute;
+            left: 20%;
+            top: 60%;
+        }
+
+        .show-following {
+            position : absolute;
+            right : 20%;
+            top : 60%;
+        }
+
+        .show-icon {
+            position: absolute;
+            left: 57%;
+            top: 80%;
+            i {
+                color : blue;
+            }
+        }
+    }
+}

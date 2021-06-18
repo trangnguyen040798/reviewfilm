@@ -1,0 +1,91 @@
+#form_add {
+	input:focus {
+		outline : none;
+		box-shadow : none;
+	}
+	input[type=text] {
+		color : white !important;
+		border : none !important;
+		border-bottom : 1px solid #999999 !important;
+		background : black !important;
+	}
+	.input-group {
+		width : 100%;
+	}
+	select {
+		background: black !important;
+		border: none !important;
+		color : white !important;
+		border-bottom: 1px solid #999999 !important;
+	}
+	.file-caption {
+		background: black;
+	}
+	.btn-file {
+		background: #FF8D1B;
+	}
+	textarea {
+		background: black;
+		width: 100%;
+	}
+	.col-form-label {
+		text-align : right;
+		color: #FF8D1B;
+	}
+	.float-right {
+		float : right;
+	}
+}
+.action-btn {
+	button {
+		width : 100%;
+		margin-bottom : 10px;
+		color : black;
+	}
+	a {
+		color : black !important;
+	}
+}
+.more-info {
+	display : none;
+}
+.select2-container--default .select2-selection--multiple  {
+	background: black !important;
+	border: none !important;
+	border-bottom: 1px solid #999999 !important;
+}
+.select2-results__options {
+	background : black !important;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+	background: black !important;
+	color: #FF8D1B !important;
+	border: 1px solid #FF8D1B !important;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove  {
+	color: #FF8D1B !important;
+}
+.select2-container--default .select2-results__option[aria-selected=true] {
+	background : #252525 !important;
+}
+.krajee-default.file-preview-frame {
+	border : 1px solid !important;
+	img {
+		width : 100% !important;
+		object-fit : cover;
+	}
+}
+.datepicker {
+	background: black !important;
+	width : 300px;
+	table {
+		width : 100%;
+	}
+}
+.datepicker-months td, .datepicker-years td,.datepicker-decades td, .datepicker-centuries td {
+	display : flex;
+	flex-wrap : wrap;
+	span {
+		width : 20%;
+	}
+}

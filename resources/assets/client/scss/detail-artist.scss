@@ -1,0 +1,58 @@
+.img-responsive {
+	width : 100%;
+	height : 300px;
+	object-fit : cover;
+}
+.artist-name {
+	text-transform : uppercase;
+	h2 {
+		color : #FF8D1B;
+		margin-bottom : 5px;
+	}
+	margin-bottom : 17px;
+}
+.div-item {
+	.artist-item {
+		display : flex;
+		label {
+			margin-right : 5px;
+		}
+		margin-bottom : 17px;
+	}
+}
+.list_video {
+
+	.item {
+
+		.img-responsive {
+			height : 235px;
+			width : 100%;
+			object-fit : cover;
+		}
+		.w3l-movie-gride-agile {
+			margin : 0 !important;
+			width : 92% !important;
+			text-align : left;
+			padding: 0 7px;
+			.hvr-shutter-out-horizontal {
+				width: 100%;
+			}
+		}
+	}
+}
+.w3_latest_text, h4.latest-text {
+	margin-left : 0;
+	font-size : 20px;
+	margin-top : 20px;
+}
+.film-summary {
+	margin-bottom : 30px;
+}
+.single-right-grid-left a img {
+	height: 100px;
+    object-fit: cover;
+}
+.ribben {
+	left: 7%;
+    text-align: center;
+}

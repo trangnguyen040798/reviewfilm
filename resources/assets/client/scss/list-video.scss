@@ -1,0 +1,267 @@
+body {
+    padding: 0;
+    background: #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+video:focus {
+    outline : none !important;
+}
+
+.title {
+    width: 100%;
+    max-width: 854px;
+    margin: 0 auto;
+}
+
+.caption {
+    width: 100%;
+    max-width: 854px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.vid-main-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display : flex;
+    flex-wrap : wrap;
+}
+
+
+/*  VIDEO PLAYER CONTAINER
+############################### */
+.vid-container {
+    position: relative;
+    width: 67%;
+    margin-right: 3%;
+    video {
+        max-width : 100%;
+        box-shadow: 0 0 5px;
+    }
+}
+
+.vid-container iframe,
+.vid-container object,
+.vid-container embed {
+    position: absulute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 360px;
+}
+
+
+/*  VIDEOS PLAYLIST 
+############################### */
+.vid-list-container {
+    width: 30%;
+}
+
+
+ul#vid-list {
+    margin:0;
+    padding:0;
+    background: #222;
+}
+
+ul#vid-list li {
+    list-style: none;
+
+}
+
+ul#vid-list li a {
+    text-decoration: none;
+    background-culor: #222;
+    height:80px;
+    padding:10px;
+    color : #999999;
+    display: flex;
+    align-items : center;
+    img {
+        width : 100px;
+        height : 60px;
+        object-fit : cover;
+        margin-right: 10px;
+    }
+    i {
+        width : 20px;
+    }
+}
+ul#vid-list li .active {
+    box-shadow : 0 0 10px;
+}
+ul#vid-list li a:hover {
+    background-culor:#666666
+}
+
+.vid-thumb {
+    float:left;
+    margin-right: 8px;
+}
+
+.active-vid { 
+    background:#3A3A3A;
+}
+
+#vid-list .desc {
+    culor: #CACACA;
+    font-size: 13px;
+}
+
+
+@media (max-width: 624px) {
+    body {
+        margin: 15px;
+    }
+    .caption {
+        margin-top: 40px;
+    }
+    .vid-list-container {
+        padding-bottom: 20px;
+    }
+
+}
+.info-video {
+    margin : 20px 0;
+    .first-line {
+        display : flex;
+        justify-content : space-between;
+        align-items: center;
+        .saveVideo {
+            margin-right : 30px;
+            cursor : pointer;
+        }
+    }
+}
+.modal-dialog.modal-sm {
+    display : flex;
+    align-items : center;
+    height : 100%;
+    .modal-content {
+        color : black !important;
+        padding : 15px;
+    }
+    hr {
+        margin : 10px 0;
+    }
+}
+.box-add-name {
+    display : none;
+    transition: all .5s ease-in-out;
+}
+#saved-video-form {
+    div {
+        margin : 0;
+    }
+    input[type=checkbox] {
+        margin-bottom : 10px;
+    }
+    .btn-add-name {
+        float : right;
+    }
+    .error_name_cate {
+        display : none;
+    }
+}
+.add-name {
+    cursor: pointer;
+}
+.panel {
+    background: black;
+    margin-top : 20px;
+}
+.panel-footer {
+    background: black;
+    border : none;
+    textarea {
+        border: none;
+        border-bottom: 1px solid white;
+        background: black;
+        margin-bottom: 10px;
+        color: #999999;
+        font-size : 14px;
+        box-shadow : none;
+    }
+    #btn-chat {
+        float : right;
+    }
+}
+.panel-body {
+    padding : 0;
+} 
+.chat {
+    li {
+        list-style : none;
+        display: flex;
+        margin-bottom: 20px;
+        .header {
+            border : none;
+            padding : 0;
+            .text-muted {
+                margin-left : 10px;
+            }
+        }
+        .chat-img {
+            width : 10%;
+            img {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+.error_body {
+    display : none;
+}
+.text-danger {
+    color : red;
+}
+.btnShare {
+    padding-right : 10px;
+    cursor: pointer;
+    position: relative;
+}
+.submenu {
+  display: none;
+  background: #444359;
+  font-size: 14px;
+}
+
+/**/
+.fb_iframe_widget iframe {
+    width : 60px !important;
+    height : 20px !important;
+}
+
+.modal-content {
+    width: 100%;
+}
+.fb-share-button {
+    position: absolute !important;
+    left: 0;
+    top: -7px;
+    opacity: 0;
+    width: 100px;
+}
+.glyphicon-time {
+    margin-right : 5px;
+}
+.creator {
+    display : flex;
+    align-items : center;
+    img {
+        width : 70px;
+        height : 70px;
+        object-fit : cover;
+        border-radius : 50%;
+        margin-right : 20px;
+    }
+    h4 {
+        font-weight : bold;
+    }
+}
+textarea:focus {
+    outline : none !important;
+    box-shadow : none !important;
+}

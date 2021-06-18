@@ -1,0 +1,443 @@
+$contact-box-background: #fff;
+$main-background-color: #f2f4f7;
+$secondary-logo-color: #FF8D1B;
+$shadow-color:rgba(30,38,56,.15);
+.contact-list{
+    padding: 0;
+
+    li{
+        list-style-type: none;
+
+        a{
+            text-decoration: none;
+        }
+
+    }
+}
+
+.contact-list__item__wrapper{
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+    margin-bottom: 1rem;
+
+    & .contact__icon{
+        min-height: 40px;
+        min-width: 40px;
+        margin-right: 1rem;
+        border: 1px solid $secondary-logo-color;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .4s;
+        
+        i{
+            color: $secondary-logo-color;
+            transition: .4s;
+        }
+
+    }
+
+}
+.contact-list__item__wrapper:hover{
+    .contact__icon{
+        background-color: $secondary-logo-color;
+
+        i{
+            color: #fff;
+        }
+    }
+    .contact__value{
+        color: $secondary-logo-color;
+    }
+}
+
+
+.contact__inner{
+    padding-bottom: 5px;
+    
+    .contact__label{
+        font-size: .7rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: rgba(30,38,56,.65);
+        margin-bottom: 0;
+        letter-spacing: .1rem;
+        margin-bottom: .25rem;
+    }
+
+    .contact__value{
+        font-size: .8rem;
+        font-weight: 700;
+        color: #1e2638;
+        transition: .4s;
+    }
+}
+
+
+.map-header__title{
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 400;
+    padding-top: 2rem;
+    
+    &::after{
+        content: '';
+        width: 100px;
+        height: 2px;
+        background-color: $secondary-logo-color;
+        display: block;
+        margin: 15px auto;
+    }
+    
+    strong{
+        font-weight: 700;
+    }
+}
+
+.map-header__store-section{
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 3rem;
+    
+    
+    .form-select{
+        padding:1rem 4rem;
+        border: 1px solid $secondary-logo-color;
+        border-radius: 4px;
+        
+        option{
+            text-align: center;
+            font-size: 1rem;
+            
+        }
+    }
+    
+    .form-select:checked{
+        border: none;
+    }
+}
+
+.stores-map__main{
+    background: #f7f7f7;
+    position: relative;
+    
+    .stores{
+        position: relative;
+    }
+    
+    .map-wrapper{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        align-items: center;
+        position: relative;
+        
+        &::after{
+            content: '';
+            width: 100%;
+            height: 50%;
+            position: absolute;
+            display: block;
+            background: linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,1) 93%);
+            bottom: 0;
+        }
+        
+        &::before{
+            content: '';
+            width: 100%;
+            height: 50%;
+            position: absolute;
+            display: block;
+            background: linear-gradient(0deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,1) 93%);
+            top: 0;
+        }
+    
+    }    
+}
+
+
+.map-point{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 100px;
+    display: block;
+
+    .map-point__marker{
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background-color: $secondary-logo-color;
+        border-radius: 50%;
+        right: 0;
+        top: 0;
+        z-index: 2;
+        transform: translate(50%, -50%);
+        cursor: pointer;
+
+    }
+    .map-point__marker-radar{
+        position: absolute;
+        top: 0;
+        right: 0;
+        align-items: center;
+        width: 15px;
+        height: 15px;
+        border: 2px solid rgba($secondary-logo-color, .2);
+        background-color: rgba($secondary-logo-color, .1);
+        border-radius: 50%;
+        transform: translate(50%, -50%);
+        opacity: 0;
+        animation: marker-animation 3.5s ease-out infinite;
+    }
+    
+    @keyframes marker-animation{
+        0%{opacity: 0}
+        30%{opacity: 1; width: 15px; height: 15px;}
+        50%{opacity: 1}
+        100%{opacity: 0; width: 150px; height: 150px}
+    }
+
+    .map-point__tooltip{
+        position: absolute;
+        right: -7.5px;
+        z-index: 3;
+        width: 150px;
+        background-color: $contact-box-background;
+        box-shadow: 0 0 30px $shadow-color;
+        text-align: center;
+        border-radius: 4px;
+        padding: 3% 0;
+        transform: translate(50%);
+        margin-top: 12px;
+        transition: .5s;
+        display: none;
+        transition-delay: .5s;
+        
+        &:hover{
+            display: block;
+        }
+        
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: 100%;
+            right: 50%;
+            width: 0;
+            height: 0;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            border-bottom: 5px solid $contact-box-background;
+
+            &:hover{
+                display: block;
+            }
+        }
+        
+        a{
+            font-size: .8rem;
+            font-weight: 500;
+            color: rgba(30,38,56,.65);
+        }
+    }
+    
+    &:hover .map-point__tooltip{
+        display: block;
+        transition-delay: .1s;
+    }
+}
+
+.map-point-bratislava{
+    top: 28%;
+    width: 344px;
+}
+
+.map-point-zilina{
+    top: 34%;
+    width: 229px;
+}
+
+.map-point-kosice{
+    top: 64%;
+    width: 362px;
+}
+
+
+//predajne miesta adresa
+.content-wrapper{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    
+    
+    .content-store{
+        min-height: 290px;
+        margin : 40px;
+        background-color: $contact-box-background;
+        box-shadow: 0 0 30px $shadow-color;
+        border-radius: 5px;
+        z-index: 10;
+
+        .content-store__inner{
+            padding: 1.5rem;
+        }
+    }
+
+   
+}
+
+
+.content-store__title{
+    font-size: 1.7rem;
+    font-weight: 400;
+    color : black;
+    strong{
+        font-weight: 700;
+    }
+}
+
+.content-store__contact{
+    margin: 2rem 0 2.5rem 0;
+}
+
+.content-store__more-info{
+    display: flex;
+    justify-content: space-between;
+    
+    .opening-hours{
+        margin-right: 1.5rem;
+        
+        .opening-hours__title{
+            font-weight: 700;
+            font-size: 1rem;
+            text-align: center;
+        }
+        
+        .opening-hours__days{
+            padding: 0;
+            list-style-type: none;
+            
+            li{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                height: 20px;
+                
+                p{
+                    font-weight: 400;
+                    color: rgba(30,38,56,.65);
+                    padding-right: 1rem;
+                    font-size: .8rem;
+                    
+                }
+                
+                strong{
+                    color: #1e2638; 
+                    text-align: right;
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+    
+    
+    .shop-picture{
+        width: 40%;
+        height: 130px;
+        overflow: hidden;
+        
+        img{
+            width: 100%;
+            object-fit: cover;
+            filter: grayscale(100%);
+        }
+    }
+    
+}
+
+@media only screen and (max-width:430px){
+    .content-wrapper .content-store {
+        margin: 0 ;
+    }
+    .content-store__more-info{
+        display: table;
+        
+        .shop-picture{
+            width: 100%;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 830px){
+    #store_bratislava .map-wrapper .map{
+        padding-right: 200px;
+    }
+
+    .map-wrapper .map-point-bratislava{
+        width: 244px;
+    }
+
+    #store_kosice .map-wrapper .map{
+        padding-right: 200px;
+    }
+
+    .map-wrapper .map-point-kosice{
+        width: 263px;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .content-wrapper .content-store{
+        margin-top: 60%;
+    }
+
+    //zmena map-point na mape Bratislava
+    #store_bratislava .map-wrapper .map{
+        padding-right: 600px;
+        padding-bottom: 100px;
+    }
+
+    .map-wrapper .map-point-bratislava{
+        width: 44px;
+        top: 22%
+    }
+
+    //zmena map-point na mape Zilina
+    #store_zilina .map-wrapper .map{
+        padding-right: 370px;
+        padding-bottom: 188px;
+    }
+
+    .map-wrapper .map-point-zilina{
+        width: 44px;
+        top: 22%
+    }
+
+    //zmena map-point na mape Kosice
+    #store_kosice .map-wrapper .map{
+        padding-right: 636px;
+        padding-bottom: 660px;
+    }
+
+    .map-wrapper .map-point-kosice{
+        width: 44px;
+        top: 22%
+    }
+
+    .stores-map__main .map-wrapper::before{
+        height: 10%;
+    }
+}
+
+#store_kosice,
+#store_zilina{
+    display: none;
+}
+

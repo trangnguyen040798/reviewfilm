@@ -1,0 +1,44 @@
+.social-button {
+	margin: 10px;
+	padding: 5px 15px;
+	border-radius: 20px;
+	color: white;
+}
+a:hover {
+	color: white;
+	text-decoration: none;
+}
+a:hover a {
+	opacity: 0.8;
+}
+.login-box{
+	margin-top: 50px;
+}
+.loginBtn--facebook {
+	background: #2a2ac3;
+}
+.loginBtn--google {
+	background: red;
+}
+.loginBtn--github {
+	background: #3b3c3e;
+}
+.m-login.m-login--2.m-login-2--skin-3 .m-login__container .m-login__head .m-login__title {
+	color: white !important;
+}
+.m-login.m-login--2 .m-login__wrapper .m-login__container .m-login__form .m-login__form-action .m-login__btn {
+    padding: 10px !important;
+    margin-top: 0 !important;
+    width : 80%;
+}
+.m-register {
+	float: right;
+    margin: 15px 10%;
+}
+.m-register a {
+	color: #5e5288;
+}
+
+.m-register a:hover {
+	color: #5e5288;
+}
